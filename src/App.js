@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { images } from './images';
+import  { Home } from './pages/Home/home';
 function App() {
+const index = Math.floor(Math.random() * images.length);  
+
+  const bgImage =images[index].image;
+  console.log(bgImage);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App"  style={{backgroundImage: `url(${bgImage})`}}>
+      <Home/>
+     </div>
+   
+
   );
 }
 

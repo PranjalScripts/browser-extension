@@ -1,5 +1,10 @@
+@import url("./component/utility.css");
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .App-logo {
